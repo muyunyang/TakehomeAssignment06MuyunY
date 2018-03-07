@@ -19,8 +19,8 @@ public class activity_second extends AppCompatActivity {
         double amount= re.getAmount();
         double tax=re.getTax();
         double tip=re.getTip();
-
-      displayMessage="Total: "+amount+"\nSales Tax: "+tax+"\nTip: "+tip+"\nGrand Total:"+amount*(1+tax)+amount*tip;
+        double total=amount*(1+tax)+amount*tip;
+      displayMessage="Total: "+amount+"\n20"+"Sales Tax: "+tax+"\n"+"Tip: "+tip+"\n"+"Grand Total:"+total;
 
         newtxt.setText(displayMessage);
 
